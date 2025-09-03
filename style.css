@@ -1,74 +1,39 @@
-/* -------- Gaslight Danny — minimal “official news” styling -------- */
-:root{
-  --bg: #0b1220;
-  --panel: #11182a;
-  --muted:#9fb0d1;
-  --text:#e6eefc;
-  --accent:#7cc2ff;
-  --accent-2:#ffd66b;
-  --link:#bfe2ff;
-  --ok:#61d092;
-  --danger:#ff7f7f;
-  --max: 980px;
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fdfcf7;
+  color: #222;
+  line-height: 1.6;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
-a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline}
-.site-wrap{max-width:var(--max);margin:auto;padding:24px}
-.header{
-  display:flex;align-items:center;gap:16px;margin:8px auto 20px;
-  border-bottom:1px solid #1c2742;padding-bottom:14px
+header {
+  text-align: center;
+  border-bottom: 3px double #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
-.logo{
-  width:44px;height:44px;border-radius:10px;display:grid;place-items:center;
-  background:linear-gradient(135deg,var(--accent),#3e79ff 60%,#2249a8); 
-  color:#00112a;font-weight:800
-}
-.brand h1{font-size:20px;margin:0}
-.brand small{display:block;color:var(--muted);margin-top:2px}
-.nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
-.nav a{padding:6px 10px;border:1px solid #1c2742;border-radius:8px}
-.badge{font-size:12px;padding:3px 8px;border-radius:99px;background:#1a2442;color:var(--muted);border:1px solid #223058}
 
-.hero{position:relative;border-radius:16px;overflow:hidden;margin:24px 0;background:
-  radial-gradient(1200px 600px at 100% 0%, #193564 0%, transparent 60%),
-  radial-gradient(1000px 600px at 0% 100%, #102a4d 0%, transparent 60%),
-  linear-gradient(180deg,#0f2a4d,#0b1733)
-; border:1px solid #1c2742}
-.hero-inner{padding:48px 24px}
-.hero h2{margin:0 0 8px;font-size:28px}
-.hero p{margin:0;color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:18px}
-.card{background:var(--panel);border:1px solid #1c2742;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.card .thumb{height:120px;background:
-  linear-gradient(180deg,#13315a,#0f2641);
-  display:flex;align-items:center;justify-content:center;font-weight:700;color:#cfe4ff;letter-spacing:.4px}
-.card h3{font-size:18px;margin:12px 12px 6px}
-.card p{margin:0 12px 12px;color:var(--muted)}
-.card .meta{margin:0 12px 14px;color:#7f92b8;font-size:12px}
-.card a.read{margin:10px 12px 14px;align-self:flex-start;padding:8px 10px;border:1px solid #2a3a63;border-radius:8px}
-
-.article{
-  background:var(--panel);border:1px solid #1c2742;border-radius:16px;padding:20px;margin-top:20px
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-family: "Times New Roman", serif;
 }
-.article h1{margin-top:0;font-size:30px;line-height:1.25}
-.kicker{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.18em}
-.byline{color:#9ab0d8;font-size:14px;margin:8px 0 20px}
-.lede{font-size:18px;color:#cfe0ff;margin:0 0 14px}
-.figure{border:1px solid #203159;border-radius:12px;padding:14px;margin:16px 0;background:#101a31}
-.aside{
-  border-left:3px solid var(--accent-2);padding:10px 12px;margin:16px 0;color:#eedeaa;background:#1c2130;border-radius:8px
-}
-.quote{border-left:3px solid var(--ok);padding:10px 12px;margin:16px 0;background:#13233c;color:#cfe4ff;border-radius:8px;font-style:italic}
-.faux-table{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
-.faux-table div{background:#0f1a33;border:1px solid #1d2a4a;border-radius:8px;padding:10px}
-.footer{margin:32px auto 10px;color:#7f92b8;font-size:13px}
-.footer .disclaimer{margin-top:8px;color:#93a6c7}
-code.inline{background:#0b1934;padding:2px 6px;border-radius:6px;border:1px solid #1c2742}
 
-@media (max-width:560px){
-  .nav{gap:8px}
-  .hero-inner{padding:28px 16px}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article img {
+  max-width: 100%;
+  display: block;
+  margin: 15px auto;
+  border: 1px solid #ccc;
 }
